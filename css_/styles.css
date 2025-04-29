@@ -1,720 +1,87 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    background: #fff0f5;
+    color: #333;
+}
+
 * {
     box-sizing: border-box;
-
-.header {
-    width: 100%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
 }
 
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-}
-
-.nav-left .logo-img {
-    max-height: 85px;
-    width: 120px; 
-    height: auto;
-    object-fit: contain;
-}
-
-.logo {
-    flex: 0 0 auto;
-}
-
-.nav-right > ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-right > ul li {
-    display: flex;
-}
-
-.nav-right > ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-right > ul li a:hover {
-    color: #ff6600;
-}
-
-
-.nav > .btn-login:hover {
-    background: #ff6600;
-    transform: scale(1.05);
-}
-
-.nav > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.nav > ul li {
-    margin: 0 15px;
-}
-
-.nav > ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav > ul li a:hover {
-    color: #ff6600;
-}
-
-.nav > ul li a.active {
-    color: #ff6600;
-    font-weight: bold;
-}
-
-.hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: #333;
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-    .nav-right {
-        display: none;
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .nav-right.active {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
-    }
+h1, h2 {
+    text-align: center;
+    color: #d6336c;
 }
 
 .hero {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background: #ffe0ec;
+    padding: 60px 20px;
     text-align: center;
-    position: relative;
-    padding-top: 100px;
-}
-.hero-content {
-    position: relative;
-    z-index: 2;
-    animation: fadeIn 2s ease-in-out;
 }
 
-.hero-content p {
-    font-size: 24px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
-}
-
-.hero-content h1 {
-    font-size: 56px;
-    font-weight: 900;
-    color: #ffffff;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-    margin-bottom: 20px;
-}
-
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0,0,0,0.6);
-    z-index: 1;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-.btn {
+.button-group .btn, .btn {
     display: inline-block;
-    width: 100%;
-    max-width: 300px
-    padding: 14px 0;
-    background: #ff6600;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.btn:hover {
-    background: #e65c00;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-    animation: pulse 1s infinite;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    opacity: 0;
-    visibility: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 10px 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    min-width: 160px;
-    z-index: 99;
-    flex-direction: column;
-}
-
-.dropdown-menu li {
-    display: block;
-}
-
-.dropdown-menu li a {
     padding: 10px 20px;
-    display: block;
-    color: #333;
-    text-decoration: none;
-}
-
-.dropdown-menu li a:hover {
-    background: #ff6600;
+    background: #d6336c;
     color: white;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: flex;
-    opacity: 1;
-    visibility: visible;
-}
-
-
-@media (max-width: 768px) {
-    .nav > ul {
-        flex-direction: column;
-        background: #fff;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 200px;
-        display: none;
-    }
-    .nav ul.active {
-        display: flex;
-    }
-}
-
-.countdown-section {
-    margin-top: 30px;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-}
-
-#countdown {
-    font-size: 48px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px auto;
     font-weight: bold;
-    letter-spacing: 2px;
-    color: #ff6600;
-    background: rgba(255,255,255,0.9);
-    padding: 12px 30px;
-    border-radius: 12px;
-    display: inline-block;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    margin-top: 10px;
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 1s ease, transform 1s ease;
+    max-width: 300px;
+    width: 90%;
 }
 
-#countdown.show {
-    opacity: 1;
-    transform: scale(1);
+.kelebihan, .produk, .promosi, .testimoni, .inspirasi, .form-tempahan {
+    padding: 50px 20px;
 }
 
+.produk-grid, .kelebihan-grid, .inspirasi-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+.produk-item, .kelebihan-item, .testimoni-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.promosi-box {
+    background: #ffd6e0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .footer {
-    background: #ff6600;
-    color: #fff;
+    background: #d6336c;
+    color: white;
     text-align: center;
-    padding: 20px 10px;
-    margin-top: 50px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 14px;
 }
 
-.hero-produk {
-    width: 100%;
-    height: 60vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden; /* Tambah ini supaya overlay tidak melebihi */
+.btn:hover {
+    background: #c2185b;
+    transition: 0.3s;
 }
 
-.hero-produk .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url('..//images/hero.produk.jpeg') center/cover no-repeat;
-    backdrop-filter: blur(8px);
-    z-index: 1;
-}
-
-
-.hero-produk .hero-content {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-}
-
-.hero-produk h1 {
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.produk-list {
-    padding: 50px 20px;
-    background: #fafafa;
-}
-
-.produk-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
-    padding: 50px 20px;
-    background: #f9f9f9;
-}
-
-.produk-item {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-}
-
-.produk-item:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-}
-
-.produk-item img {
-    width: 100%;
-    height: 350px;
-    object-fit: contain;
-    padding: 10px;
-}
-
-.produk-item h3 {
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 8px;
-    color: #333;
-    font-weight: bold;
-}
-
-.produk-item .harga {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.produk-item .btn {
-    margin: 10px 3% 30px 30px;
-    padding: 12px;
-    border-radius: 30px;
-    text-align: center;
-}
-
-.produk-content {
-    flex-grow: 1;
-    margin-bottom: 20px;
-}
-.produk-bottom {
-    margin-top: auto;
-}
-
-.testimoni-list {
-    padding: 50px 20px;
-    background: #fafafa;
-}
-
-.testimoni-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.testimoni-item {
-    background: #fff;
-    padding: 30px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.testimoni-item:hover {
-    background-color: #fff5f0;
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-}
-
-
-.testimoni-item .avatar {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
-}
-
-
-.testimoni-item h3 {
-    margin-bottom: 10px;
-    font-size: 22px;
-    color: #333;
-    font-weight: bold;
-}
-
-.testimoni-item p {
-    font-size: 16px;
-    color: #777;
-}
-
-.rating {
-    color: #ffcc00;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.form-section {
-    padding: 60px 20px;
-    background: #fafafa;
-}
-
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.tempahan-form {
-    background: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 14px 18px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: #ff6600;
-    box-shadow: 0 0 8px rgba(255, 102, 0, 0.3);
-    outline: none;
-}
-
-.form-group textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.tempahan-form .btn {
-    margin-top: 10px;
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 30px;
-}
-
-.thankyou-message {
-    background: #fff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.thankyou-message h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.thankyou-message p {
-    font-size: 18px;
-    color: #555;
-}
-
-.about-section {
-    padding: 60px 20px;
-    background: #fafafa;
-    text-align: center;
-}
-
-.about-section h2 {
-    font-size: 32px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: #222;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.about-section p {
-    max-width: 800px;
-    margin: 0 auto 30px;
-    font-size: 18px;
-    color: #555;
-}
-
-.about-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20%;
-    margin-bottom: 50px;
-}
-
-@media (max-width: 768px) {
-
-    .produk-grid,
-    .about-grid,
-    .testimoni-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .produk-item,
-    .about-card,
-    .testimoni-card {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .container {
-        padding: 0 15px;
-    }
-
-    .about-section,
-    .testimoni-section,
-    .form-section {
-        padding: 40px 10px;
-    }
-
-    
-    .hero-content h1 {
-        font-size: 32px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-
-    .btn {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
-}
-
-
-.about-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-    width: 300px;
-    text-align: center;
-    transition: all 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-}
-
-.about-card h3 {
-    font-size: 22px;
-    color: #ff6600;
-    margin-bottom: 15px;
-}
-
-.about-card p,
-.about-card ul {
-    font-size: 18px;
-    color: #555;
-}
-
-.why-choose-us {
-    list-style: none;
-    padding: 0;
-    font-size: 18px;
-    color: #444;
-    line-height: 1.8;
-}
-
-.about-section h1,
-.about-section h2,
-.about-section h3 {
-    margin-bottom: 30px; /* Kecilkan jarak bawah heading */
-}
-
-.about-img,
-.about-image img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    margin: 30px auto 10px;
-    margin-top: 30px;
-    display: block;
-    transition: transform 0.3 ease;
-}
-
-.about-img:hover,
-.about-image img:hover {
-    transform: scale(1.03);
-}
-.about-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 90px;
-    margin: 40px 0;
-}
-
-.about-flex .about-text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.about-flex .about-image img {
-    max-width: 54%;
-    border-radius: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-#preloader {
-    background: #fff url('https://i.imgur.com/LLF5iyg.gif') no-repeat center center;
-    background-size: 80px 80px;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-}
-
+/* Tambahan untuk responsif */
 @media screen and (max-width: 768px) {
-    .hero {
-        padding: 30px 15px;
-    }
-
     h1, h2 {
         font-size: 20px;
     }
 
-    .btn, .button-group .btn {
-        padding: 10px;
-        font-size: 14px;
-        width: 90%;
+    .hero {
+        padding: 40px 15px;
     }
 
     .produk-grid,
@@ -730,12 +97,7 @@
         width: 90%;
     }
 
-    .promosi-box {
-        padding: 15px;
-    }
-
-    .footer {
+    .btn {
         font-size: 14px;
     }
 }
-
