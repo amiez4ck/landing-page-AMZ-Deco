@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+
 .header {
     width: 100%;
     padding: 20px 50px;
@@ -171,6 +174,7 @@
 .btn {
     display: inline-block;
     width: 100%;
+    max-width: 300px
     padding: 14px 0;
     background: #ff6600;
     color: #fff;
@@ -180,6 +184,7 @@
     font-weight: bold;
     font-size: 18px;
     transition: all 0.3s ease;
+    box-sizing: border-box;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
@@ -696,3 +701,41 @@
     top: 0;
     left: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 30px 15px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    .btn, .button-group .btn {
+        padding: 10px;
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .produk-grid,
+    .kelebihan-grid,
+    .inspirasi-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produk-item,
+    .kelebihan-item,
+    .testimoni-item {
+        width: 90%;
+    }
+
+    .promosi-box {
+        padding: 15px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
