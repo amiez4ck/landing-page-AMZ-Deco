@@ -2,7 +2,7 @@
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mengenai Kami - AMZ Deco</title>
     <link rel="stylesheet" href="css_/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -19,9 +19,6 @@
   });
 </script>
 
-
-
-<!-- Header -->
 <header class="header">
     <div class="container">
         <div class="nav-left">
@@ -29,21 +26,21 @@
         </div>
         <div class="nav-right">
         <ul>
-    <li><a href="index.php">Halaman Utama</a></li>
+    <li><a href="index.html">Halaman Utama</a></li>
 
     <li class="dropdown">
         <a href="#">Produk</a>
         <ul class="dropdown-menu">
-            <li><a href="produk.php">Lihat Produk</a></li>
-            <li><a href="form-tempahan.php">Tempahan Produk</a></li>
-            <li><a href="testimoni.php">Testimoni Pelanggan</a></li>
+            <li><a href="produk.html">Lihat Produk</a></li>
+            <li><a href="form-tempahan.html">Tempahan Produk</a></li>
+            <li><a href="testimoni.html">Testimoni Pelanggan</a></li>
         </ul>
     </li>
 
     <li class="dropdown">
            <a href="#">Mengenai Kami</a>
            <ul class="dropdown-menu">
-           <li><a href="tentangkami.php">Mengenai Kami</a></li>
+           <li><a href="tentangkami.html">Mengenai Kami</a></li>
         </ul>
     </li>
 
