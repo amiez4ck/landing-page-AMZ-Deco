@@ -41,7 +41,7 @@
 
         </div>
 
-        <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <i class="fa-solid fa-bars"></i>
 </div>
    </div>
@@ -107,6 +107,14 @@ function toggleMenu() {
   window.addEventListener('load', function(){
     document.getElementById('preloader').style.display = 'none';
   });
+</script>
+
+    <script>
+document.querySelectorAll('.nav-right a').forEach(link =>
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-right').classList.remove('active');
+    })
+);
 </script>
 
 
