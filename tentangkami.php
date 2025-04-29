@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenai Kami - AMZ Deco</title>
+    <link rel="stylesheet" href="css_/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="preloader"></div>
+
+<script>
+  window.addEventListener('load', function(){
+    document.getElementById('preloader').style.display = 'none';
+  });
+</script>
+
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="nav-left">
+            <img src="images/logo.png" alt="AMZ Deco Logo" class="logo-img">
+        </div>
+        <div class="nav-right">
+        <ul>
+    <li><a href="index.php">Halaman Utama</a></li>
+
+    <li class="dropdown">
+        <a href="#">Produk</a>
+        <ul class="dropdown-menu">
+            <li><a href="produk.php">Lihat Produk</a></li>
+            <li><a href="form-tempahan.php">Tempahan Produk</a></li>
+            <li><a href="testimoni.php">Testimoni Pelanggan</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown">
+           <a href="#">Mengenai Kami</a>
+           <ul class="dropdown-menu">
+           <li><a href="tentangkami.php">Mengenai Kami</a></li>
+        </ul>
+    </li>
+
+</ul>
+
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+</div>
+   </div>
+
+</header>
+
+<!-- Hero Section -->
+<section class="hero-produk">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Mengenai Kami</h1>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+    <div class="container">
+        <h2>Siapa Kami</h2>
+        <p>AMZ Deco ialah penyedia perkhidmatan hiasan dalaman rumah yang berpusat di Malaysia. Kami komited untuk menjadikan setiap ruang lebih selesa, bergaya dan menggambarkan personaliti pemiliknya.</p>
+
+        <div class="about-flex">
+  <div class="about-text">
+  </div>
+  <div class="about-image">
+    <img src="images/tentang-kami.jpg" alt="Pasukan AMZ Deco" data-aos="fade-up">
+  </div>
+</div>
+
+        <div class="about-grid">
+            <div class="about-card" data-aos="fade-right">
+                <h3>Visi</h3>
+                <p>Menjadi pilihan utama rakyat Malaysia dalam rekaan dalaman yang mesra bajet dan premium.</p>
+            </div>
+            <div class="about-card" data-aos="fade-left">
+                <h3>Misi</h3>
+                <ul>
+                    <li>✔️ Memberi servis pantas & berkualiti</li>
+                    <li>✔️ Menawarkan pelbagai pilihan dekorasi moden</li>
+                    <li>✔️ Menjaga kepuasan pelanggan 100%</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Kenapa Pilih Kami?</h2>
+        <ul class="why-choose-us" data-aos="fade-bottom">
+            <li>✔️ Harga mampu milik</li>
+            <li>✔️ Reka bentuk moden & eksklusif</li>
+            <li>✔️ Perkhidmatan mesra pelanggan</li>
+            <li>✔️ Dipercayai pelanggan lebih 5 tahun</li>
+        </ul>
+    </div>
+
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 AMZ Deco. Semua Hak Cipta Terpelihara.</p>
+    </div>
+</footer>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Masa animasi (1 saat)
+    once: true      // Hanya animate sekali
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+
+
+</body>
+</html>

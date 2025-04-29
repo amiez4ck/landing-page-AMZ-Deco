@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMZ Deco - Pilihan Terbaik</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css_/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+<div id="preloader"></div>
+
+<header class="header">
+    <div class="container">
+        <div class="nav-left">
+            <img src="images/logo.png" alt="AMZ Deco Logo" class="logo-img">
+        </div>
+        <div class="nav-right">
+        <ul>
+    <li><a href="index.php">Halaman Utama</a></li>
+
+    <li class="dropdown">
+        <a href="#">Produk</a>
+        <ul class="dropdown-menu">
+            <li><a href="produk.php">Lihat Produk</a></li>
+            <li><a href="form-tempahan.php">Tempahan Produk</a></li>
+            <li><a href="testimoni.php">Testimoni Pelanggan</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown">
+           <a href="#">Mengenai Kami</a>
+           <ul class="dropdown-menu">
+           <li><a href="tentangkami.php">Mengenai Kami</a></li>
+        </ul>
+    </li>
+</ul>
+
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+</div>
+   </div>
+
+</header>
+
+<section class="hero" style="background: url('images/background.jpg') center/cover no-repeat;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <p>Selamat Datang</p>
+        <h1>Pilihan Terbaik Adalah Kami</h1>
+        <a href="produk.php" class="btn">Lihat Produk</a>
+        </div>
+        <div class="countdown-section">
+            <p>Promosi Tamat Dalam:</p>
+            <div id="countdown"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+var countDownDate = new Date();
+countDownDate.setHours(countDownDate.getHours() + 12);
+
+var countdown = document.getElementById("countdown");
+
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdown.innerHTML = hours + "j " + minutes + "m " + seconds + "s ";
+
+    countdown.classList.add("show");
+
+    if (distance < 0) {
+        clearInterval(x);
+        countdown.innerHTML = "Promosi Tamat";
+    }
+}, 1000);
+</script>
+
+<script>
+function toggleMenu() {
+    var nav = document.querySelector('.nav-right');
+    nav.classList.toggle('active');
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+<script>
+  window.addEventListener('load', function(){
+    document.getElementById('preloader').style.display = 'none';
+  });
+</script>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 AMZ Deco. Semua Hak Cipta Terpelihara.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

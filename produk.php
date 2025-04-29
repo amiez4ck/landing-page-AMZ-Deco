@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Kami - AMZ Deco</title>
+    <link rel="stylesheet" href="css_/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="preloader"></div>
+
+<header class="header">
+    <div class="container">
+        <div class="nav-left">
+            <img src="images/logo.png" alt="AMZ Deco Logo" class="logo-img">
+        </div>
+        <div class="nav-right">
+        <ul>
+    <li><a href="index.php">Halaman Utama</a></li>
+
+    <li class="dropdown">
+        <a href="#">Produk</a>
+        <ul class="dropdown-menu">
+            <li><a href="produk.php">Lihat Produk</a></li>
+            <li><a href="form-tempahan.php">Tempahan Produk</a></li>
+            <li><a href="testimoni.php">Testimoni Pelanggan</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown">
+           <a href="#">Mengenai Kami</a>
+           <ul class="dropdown-menu">
+           <li><a href="tentangkami.php">Mengenai Kami</a></li>
+        </ul>
+    </li>
+
+</ul>
+
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+</div>
+   </div>
+
+</header>
+
+<section class="hero-produk">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Produk Kami</h1>
+    </div>
+</section>
+
+<section class="produk-list">
+    <div class="container produk-grid">
+        
+    <div class="produk-item" data-aos="fade-left">
+    <img src="images/langsir_unggulan.jpg" alt="Langsir Moden">
+    <h3>Langsir Moden</h3>
+    <p class="harga">RM 150</p>
+    <a href="form-tempahan.php" class="btn">Tempah Sekarang</a>
+</div>
+
+
+</div>
+
+
+        <div class="produk-item" data-aos="fade-up">
+            <img src="images/wallpaper_bunga.jpg" alt="Wallpaper Dinding">
+            <h3>Wallpaper Dinding</h3>
+            <p class="harga">RM 200</p>
+            <a href="form-tempahan.php" class="btn">Tempah Sekarang</a>
+        </div>
+        </div>
+
+        <div class="produk-item" data-aos="fade-right">
+            <img src="images/lampu_moden.jpg" alt="Lampu Hiasan">
+            <h3>Lampu Hiasan</h3>
+            <p class="harga">RM 180</p>
+            <a href="form-tempahan.php" class="btn">Tempah Sekarang</a>    
+        </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 AMZ Deco. Semua Hak Cipta Terpelihara.</p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    var nav = document.querySelector('.nav-right');
+    nav.classList.toggle('active');
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+<script>
+  window.addEventListener('load', function(){
+    document.getElementById('preloader').style.display = 'none';
+  });
+</script>
+
+
+
+</body>
+</html>
