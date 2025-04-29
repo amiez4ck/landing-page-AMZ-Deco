@@ -115,6 +115,14 @@ function toggleMenu() {
   });
 </script>
 
+    <script>
+document.querySelectorAll('.nav-right a').forEach(link =>
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-right').classList.remove('active');
+    })
+);
+</script>
+
 
 
 </body>
