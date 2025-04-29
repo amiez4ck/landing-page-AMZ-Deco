@@ -1,0 +1,79 @@
+
+/* Tambahan penting untuk pastikan hamburger muncul dan berfungsi */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 999;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-right.active {
+        display: flex;
+    }
+
+    .nav-right ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .produk-grid,
+    .about-grid,
+    .testimoni-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .produk-item,
+    .about-card,
+    .testimoni-item {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .produk-item img {
+        height: auto;
+        max-height: 250px;
+        object-fit: contain;
+    }
+
+    .tempahan-form,
+    .thankyou-message,
+    .about-section,
+    .testimoni-list {
+        padding: 20px 15px;
+    }
+}
