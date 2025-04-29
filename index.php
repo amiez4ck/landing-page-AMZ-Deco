@@ -2,7 +2,7 @@
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>AMZ Deco - Pilihan Terbaik</title>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css_/styles.css">
@@ -20,21 +20,21 @@
         </div>
         <div class="nav-right">
         <ul>
-    <li><a href="index.php">Halaman Utama</a></li>
+    <li><a href="index.html">Halaman Utama</a></li>
 
     <li class="dropdown">
         <a href="#">Produk</a>
         <ul class="dropdown-menu">
-            <li><a href="produk.php">Lihat Produk</a></li>
-            <li><a href="form-tempahan.php">Tempahan Produk</a></li>
-            <li><a href="testimoni.php">Testimoni Pelanggan</a></li>
+            <li><a href="produk.html">Lihat Produk</a></li>
+            <li><a href="form-tempahan.html">Tempahan Produk</a></li>
+            <li><a href="testimoni.html">Testimoni Pelanggan</a></li>
         </ul>
     </li>
 
     <li class="dropdown">
            <a href="#">Mengenai Kami</a>
            <ul class="dropdown-menu">
-           <li><a href="tentangkami.php">Mengenai Kami</a></li>
+           <li><a href="tentangkami.html">Mengenai Kami</a></li>
         </ul>
     </li>
 </ul>
@@ -53,7 +53,7 @@
     <div class="hero-content">
         <p>Selamat Datang</p>
         <h1>Pilihan Terbaik Adalah Kami</h1>
-        <a href="produk.php" class="btn">Lihat Produk</a>
+        <a href="produk.html" class="btn">Lihat Produk</a>
         </div>
         <div class="countdown-section">
             <p>Promosi Tamat Dalam:</p>
