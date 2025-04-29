@@ -2,7 +2,7 @@
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Terima Kasih - AMZ Deco</title>
     <link rel="stylesheet" href="css_/styles.css">
 </head>
@@ -17,21 +17,21 @@
         </div>
         <div class="nav-right">
         <ul>
-    <li><a href="index.php">Halaman Utama</a></li>
+    <li><a href="index.html">Halaman Utama</a></li>
 
     <li class="dropdown">
         <a href="#">Produk</a>
         <ul class="dropdown-menu">
-            <li><a href="produk.php">Lihat Produk</a></li>
-            <li><a href="form-tempahan.php">Tempahan Produk</a></li>
-            <li><a href="testimoni.php">Testimoni Pelanggan</a></li>
+            <li><a href="produk.html">Lihat Produk</a></li>
+            <li><a href="form-tempahan.html">Tempahan Produk</a></li>
+            <li><a href="testimoni.html">Testimoni Pelanggan</a></li>
         </ul>
     </li>
 
     <li class="dropdown">
            <a href="#">Mengenai Kami</a>
            <ul class="dropdown-menu">
-           <li><a href="tentangkami.php">Mengenai Kami</a></li>
+           <li><a href="tentangkami.html">Mengenai Kami</a></li>
         </ul>
     </li>
 
@@ -46,7 +46,6 @@
 
 </header>
 
-<!-- Thank You Section -->
 <section class="hero-produk">
     <div class="overlay"></div>
     <div class="hero-content">
@@ -57,25 +56,14 @@
 <section class="form-section">
     <div class="container form-container">
         <div class="thankyou-message">
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $nama = htmlspecialchars($_POST['nama']);
-                $telefon = htmlspecialchars($_POST['telefon']);
-                $produk = htmlspecialchars($_POST['produk']);
-                echo "<h2>Terima kasih, $nama!</h2>";
-                echo "<p>Tempahan anda untuk <strong>$produk</strong> telah kami terima.</p>";
-                echo "<p>Kami akan hubungi anda di nombor: <strong>$telefon</strong> secepat mungkin.</p>";
-            } else {
-                echo "<p>Tiada data diterima.</p>";
-            }
-            ?>
+            
             <br>
-            <a href="index.php" class="btn">Kembali ke Halaman Utama</a>
+            <a href="index.html" class="btn">Kembali ke Halaman Utama</a>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
+
 <footer class="footer">
     <div class="container">
         <p>© 2025 AMZ Deco. Semua Hak Cipta Terpelihara.</p>
