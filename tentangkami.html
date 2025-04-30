@@ -38,9 +38,10 @@
 
         </ul>
 
-        </div><div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="hamburger" onclick="toggleMenu()">
             <i class="fa-solid fa-bars"></i>
-        </div>
+          </div>
+          
 </div>
    </div>
 
@@ -102,7 +103,21 @@
     </div>
 </footer>
 
-<!-- AOS JS -->
+<script>
+    function toggleMenu() {
+        var nav = document.querySelector('.nav-right');
+        nav.classList.toggle('active');
+    }
+    </script>
+    
+    <script>
+    document.querySelectorAll('.nav-right a').forEach(link =>
+        link.addEventListener('click', () => {
+            document.querySelector('.nav-right').classList.remove('active');
+        })
+    );
+    </script>
+    
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
